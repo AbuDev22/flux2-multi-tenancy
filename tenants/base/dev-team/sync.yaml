@@ -8,7 +8,7 @@ spec:
   interval: 1m0s
   ref:
     branch: main
-  url: https://github.com/flux2-multi-tenenacy
+  url: https://github.com/Abudev22/dev-repo
 ---
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
@@ -17,7 +17,7 @@ metadata:
   namespace: apps
 spec:
   interval: 1m0s
-  path: ./
+  path: ./apps
   prune: false
   serviceAccountName: dev-team
   sourceRef:
